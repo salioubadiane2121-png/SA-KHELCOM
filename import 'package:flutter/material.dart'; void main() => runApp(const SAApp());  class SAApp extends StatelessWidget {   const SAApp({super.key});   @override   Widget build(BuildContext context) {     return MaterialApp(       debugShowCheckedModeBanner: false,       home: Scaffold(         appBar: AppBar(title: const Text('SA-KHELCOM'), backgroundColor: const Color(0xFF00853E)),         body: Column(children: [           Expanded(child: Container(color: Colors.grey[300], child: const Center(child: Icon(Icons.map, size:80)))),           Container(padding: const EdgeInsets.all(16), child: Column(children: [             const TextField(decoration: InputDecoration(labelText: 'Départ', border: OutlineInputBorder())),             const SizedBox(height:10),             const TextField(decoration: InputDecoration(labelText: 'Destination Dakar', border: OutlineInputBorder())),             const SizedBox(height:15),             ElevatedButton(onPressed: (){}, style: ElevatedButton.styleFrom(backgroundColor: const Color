@@ -1,0 +1,25 @@
+import 'package:flutter/material.dart';
+void main() => runApp(const SAApp());
+
+class SAApp extends StatelessWidget {
+  const SAApp({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(title: const Text('SA-KHELCOM'), backgroundColor: const Color(0xFF00853E)),
+        body: Column(children: [
+          Expanded(child: Container(color: Colors.grey[300], child: const Center(child: Icon(Icons.map, size:80)))),
+          Container(padding: const EdgeInsets.all(16), child: Column(children: [
+            const TextField(decoration: InputDecoration(labelText: 'Départ', border: OutlineInputBorder())),
+            const SizedBox(height:10),
+            const TextField(decoration: InputDecoration(labelText: 'Destination Dakar', border: OutlineInputBorder())),
+            const SizedBox(height:15),
+            ElevatedButton(onPressed: (){}, style: ElevatedButton.styleFrom(backgroundColor: const Color(0xFF00853E), minimumSize: const Size(double.infinity,50)), child: const Text('COMMANDER - 2500 F', style: TextStyle(fontSize:18)))
+          ]))
+        ]),
+      ),
+    );
+  }
+}
