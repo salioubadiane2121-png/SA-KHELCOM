@@ -1,0 +1,17 @@
+name: sa_khelcom
+description: SA-KHELCOM - Yango pour Dakar Senegal
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  google_maps_flutter: ^2.5.0
+  geolocator: ^10.1.0
+  cupertino_icons: ^1.0.2
+
+flutter:
+  uses-material-design: true
